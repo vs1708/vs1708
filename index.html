@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets\css\img.css">
+	<link rel="stylesheet" type="text/css" href="assets\css\grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="assets/js/vinay.js"></script>
+</head>
+<style>
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+</style>
+<body background="images\back.jpg">
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+<nav class="navbar navbar-expand-lg navbar-inverse">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.facebook.com/aadi.chabukswar">
+<button type="button" class="btn btn-primary"><i class="fa fa-facebook left"></i></button><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/aad.dii/"><button type="button" class="btn btn-danger"><i class="fa fa-instagram"></i></button></a>
+      </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+	div.imagetiles div.col-md-3 {
+		padding: 10px;
+		float: top; 
+	}
+</style>
+<div class="container">
+	<div class="jumbotron">
+	<h1>Aad.dii</h1>
+	<font size="4"><strong>Located In London, Aadi is a B.A.(Hons) Fashion photography student studying at UAL: London College of Fashion. She specialises in Fashion and Portraiture photography and is an occassional creative as well as art director for her university projects.
+  	Being an occassional model, she plays a role in front of as well as behind the camera.</strong></font>
+  	<br>
+  	<br>
+	<a href="http://www.arts.ac.uk/fashion/"><button class="btn btn-outline-secondary"><img src="images\UAL-LOGO1.png" alt="UAL" width="180" height="70" border="0"></button></a>
+	<br>
+	<br>
+	<a href="https://www.facebook.com/aadi.chabukswar"><button class=" btn btn-primary"><i class="fa fa-facebook-square"></i></button></a>
+	<a href="https://www.instagram.com/aad.dii"><button type="button" class="btn btn-danger"><i class="fa fa-instagram"></i></button></a>
+	</div>
+
+	<div id="overlay" onclick="off()">
+  <div id="text">
+  	Located In London, Aadi is a BA(HONS) Fashion photography student studying at UAL: London College of Fashion. She specialises in Fashion and Portraiture photography and is an occassional creative as well as art director for her university projects.
+  	Being an occassional model, she plays a role in front of as well as behind the camera.
+  </div>
+</div>
+
+<section id="photos">
+	
+		<img src="images\DSC04383.jpg" class="thumb img-thumbnail img-responsive hover-shadow" onclick="openModal();currentSlide(1);">
+	
+	
+<img src="images\DSC04665.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	
+	
+	
+		<img src="images\IMG_7166.jpg" class=" thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	
+	
+		<img src="images\IMG_7226.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	
+
+	
+		<img src="images\IMG_7232.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(5)" class="hover-shadow">
+
+	
+	
+		<img src="images\IMG_7181.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(6)" class="hover-shadow">
+	
+	
+		<img src="images\IMG_7214.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(7)" class="hover-shadow">
+	
+	
+		<img src="images\IMG_6884.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(8)" class="hover-shadow">
+	
+	
+		<img src="images\IMG_7230.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			<img src="images\IMG_6892.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(10)" class="hover-shadow">
+			<img src="images\IMG_7399.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(11)" class="hover-shadow">
+			<img src="images\IMG_7401.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(12)" class="hover-shadow">
+			<img src="images\IMG_7402.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(13)" class="hover-shadow">
+			<img src="images\IMG_7408.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(14)" class="hover-shadow">
+	
+		<img src="images\IMG_7409.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(15)" class="hover-shadow">
+	
+		<img src="images\IMG_7416.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(16)" class="hover-shadow">
+	
+		<img src="images\IMG_7419.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(17)" class="hover-shadow">
+	
+		<img src="images\IMG_8088.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(18)" class="hover-shadow">
+	
+		<img src="images\IMG_7426.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(19)" class="hover-shadow">
+	
+		<img src="images\IMG_8017.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(20)" class="hover-shadow">
+	
+		<img src="images\IMG_8002.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(21)" class="hover-shadow">
+	
+		<img src="images\IMG_8001.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(22)" class="hover-shadow">
+	
+		<img src="images\IMG_7867.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(23)" class="hover-shadow">
+	
+		<img src="images\IMG_7424.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(24)" class="hover-shadow">
+	
+		<img src="images\IMG_7427.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(25)" class="hover-shadow">
+	
+	<img src="images\IMG_7403.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(26)" class="hover-shadow">
+
+		<img src="images\IMG_7421.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(27)" class="hover-shadow">
+	
+		<img src="images\IMG_7406.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(28)" class="hover-shadow">
+	<img src="images\IMG_9105.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(29)" class="hover-shadow">
+
+	<img src="images\IMG_7164.jpg" class="thumb img-thumbnail img-responsive" onclick="openModal();currentSlide(30)"
+	class="hover-shadow">
+
+	<img src="images\IMG_6881.jpg" class="thumb img-thumbnail img-thumbnail" onclick="openModal();currentSlide(31)"
+	class="hover-shadow">
+		
+	</section>
+
+	<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 28</div>
+      <img src="images\DSC04383.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 28</div>
+      <img src="images\DSC04665.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 28</div>
+      <img src="images\IMG_7166.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 28</div>
+      <img src="images\IMG_7226.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">5 / 28</div>
+    	<img src="images\IMG_7232.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">6 / 28</div>
+    	<img src="images\IMG_7181.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">7 / 28</div>
+    	<img src="images\IMG_7214.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">8 / 28</div>
+    	<img src="images\IMG_6884.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">9 / 28</div>
+    	<img src="images\IMG_7230.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">10 / 28</div>
+    	<img src="images\IMG_6892.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">11 / 28</div>
+    	<img src="images\IMG_7399.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">12 / 28</div>
+    	<img src="images\IMG_7401.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">13 / 28</div>
+    	<img src="images\IMG_7402.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">14 / 28</div>
+    	<img src="images\IMG_7408.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">15 / 28</div>
+    	<img src="images\IMG_7409.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">16 / 28</div>
+    	<img src="images\IMG_7416.jpg" style="width: 100%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">17 / 28</div>
+    	<img src="images\IMG_7419.jpg" style="width: 100%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">18 / 28</div>
+    	<img src="images\IMG_8088.jpg" style="width: 100%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">19 / 28</div>
+    	<img src="images\IMG_7426.jpg" style="width: 100%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">20 / 28</div>
+    	<img src="images\IMG_8017.jpg" style="width: 100%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">21 / 28</div>
+    	<img src="images\IMG_8002.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">22 / 28</div>
+    	<img src="images\IMG_8001.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">23 / 28</div>
+    	<img src="images\IMG_7867.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">24 / 28</div>
+    	<img src="images\IMG_7424.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">25 / 28</div>
+    	<img src="images\IMG_7427.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">26 / 28</div>
+    	<img src="images\IMG_7403.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">27 / 28</div>
+    	<img src="images\IMG_7421.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">28 / 28</div>
+    	<img src="images\IMG_7406.jpg" style="width: 150%">
+    </div>
+
+     <div class="mySlides">
+    	<div class="numbertext">29 / 29</div>
+    	<img src="images\IMG_9105.jpg" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">30 / 30</div>
+    	<img src="images\IMG_7164.jpg" style="width: 200%">
+    </div>
+
+    <div class="mySlides">
+    	<div class="numbertext">31 / 31</div>
+    	<img src="images\IMG_6881.jpg" style="width: 100%">
+    </div>
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+   
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+</body>
+</html>
